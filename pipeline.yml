@@ -22,7 +22,7 @@ stages:
       inputs:
         deploymentScope: 'Resource Group'
         azureResourceManagerConnection: 'PipelineTest'
-        subscriptionId: '562088b5-dc92-4ec2-8480-f383926cc3ec'
+        subscriptionId: ********'
         action: 'Create Or Update Resource Group'
         resourceGroupName: 'rg-MSSE-Pipeline'
         location: 'eastus2'
