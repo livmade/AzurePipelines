@@ -4,28 +4,28 @@
 param
 (
     [parameter(HelpMessage="The Azure DevOps Organization the project will be created in.")]
-    $org = "MSSE-Program",
+    $org = " ",
 
     [parameter(HelpMessage="The name of the project.")]
     $projectName = "Liv Project",
 
     [parameter(HelpMessage="The name of the process used.")]
-    $processName = "MSSE-CMMI-MAIN-v2.7",
+    $processName = " ",
 
     [parameter(HelpMessage="The list of processes in the tenant")]
     $processList = "api-version=7.2-preview.1",
     
     [parameter(HelpMessage="The list of projects in the tenant")]
-    $projectList = "api-version=7.2-preview.4"
+    $projectList = "api-version=7.2-preview.4",
 )
 
 # The Organization URL
 $fullOrgURL = "https://dev.azure.com/$org
 
 # PAT for authentication
-$az devops login --organization $fullOrgURL
 
-Write-host "Connecting to '$org'."
+$az devops login --organization $fullOrgURL
+Write-host "Creating to $org."
 az devops login --org $fullOrgUrl
 
 # Get list of all processes
